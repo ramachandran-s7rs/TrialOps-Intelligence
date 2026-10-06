@@ -1,251 +1,62 @@
-# TrialOps-Intelligence
-Clinical Data Quality and Analytics Platform
-
 # TrialOps Intelligence
 
-## Clinical Data Quality and Analytics Platform
+TrialOps Intelligence is a Python-only Streamlit clinical data-quality and analytics platform for CDISC SDTM-style data. It supports session-scoped dataset uploads, structural domain detection, validation findings, persistent query management, subject review, safety/laboratory analytics, and treatment exposure and efficacy review.
 
-TrialOps Intelligence is a clinical data management and analytics platform designed to support clinical trial operations through automated data validation, query management, patient-level review, safety surveillance, efficacy analysis, anomaly detection, and reporting.
+## Run locally
 
-The platform simulates workflows commonly used in Clinical Data Management (CDM), Clinical Operations, Clinical Analytics, and Drug Development environments.
-
----
-
-## Features
-
-### Dashboard
-- Study-level overview
-- Clinical trial metrics
-- Data quality indicators
-- Subject and record summaries
-
-### Data Upload
-- Upload SDTM-style datasets
-- Automatic domain detection
-- Multi-file support
-- Data preview and validation
-
-### Validation Engine
-- Clinical data quality checks
-- Missing value detection
-- Duplicate record detection
-- Date consistency validation
-- Domain-specific validation rules
-
-### Query Management
-- Automated query generation
-- Query tracking
-- Open / Answered / Closed status management
-- Clinical data review workflow
-
-### Patient 360
-- Subject-centric review
-- Clinical timeline visualization
-- Adverse event review
-- Validation findings summary
-- Query history tracking
-
-### Exposure & Efficacy Analytics
-- Treatment exposure analysis
-- Endpoint assessment
-- Change-from-baseline evaluation
-- Treatment-arm comparison
-- Clinical efficacy summaries
-
-### Laboratory Analytics
-- Laboratory trend analysis
-- Out-of-range detection
-- Laboratory safety monitoring
-- Subject-level laboratory review
-
-### Anomaly Detection
-- Data quality anomaly identification
-- Statistical outlier detection
-- Clinical risk monitoring
-- Site and subject risk analysis
-
-### Reports
-- Clinical Data Quality Report
-- Query Management Report
-- Safety Surveillance Report
-- Laboratory Review Report
-- Exposure & Efficacy Report
-- Study Executive Summary
-- CSV export capability
-
----
-
-## Clinical Domains Supported
-
-The platform supports commonly used SDTM-style clinical datasets including:
-
-| Domain | Description |
-|----------|-------------|
-| DM | Demographics |
-| AE | Adverse Events |
-| LB | Laboratory Data |
-| EX | Exposure |
-| VS | Vital Signs |
-| CM | Concomitant Medications |
-| MH | Medical History |
-| EFF | Efficacy Endpoints |
-
----
-
-## Technology Stack
-
-### Frontend
-- Streamlit
-- Plotly
-
-### Backend
-- Python
-- Pandas
-- NumPy
-
-### Analytics
-- Scikit-learn
-- Statistical Analysis
-- Rule-Based Clinical Validation
-
-### Database
-- SQLite
-
-### Reporting
-- OpenPyXL
-- ReportLab
-
----
-
-## Clinical Analytics Capabilities
-
-### Data Quality Monitoring
-- Missing data analysis
-- Duplicate record detection
-- Validation rule execution
-
-### Safety Analytics
-- Adverse event monitoring
-- Serious adverse event identification
-- Treatment-arm safety review
-
-### Efficacy Analytics
-- Endpoint evaluation
-- Baseline comparison
-- Treatment effectiveness summaries
-
-### Risk Monitoring
-- Anomaly detection
-- Site-level monitoring
-- Subject-level review
-
----
-
-## Project Architecture
-
-```text
-Clinical Trial Data
-        │
-        ▼
-Data Upload Module
-        │
-        ▼
-Domain Detection Engine
-        │
-        ▼
-Validation Engine
-        │
-        ▼
-Query Management
-        │
-        ▼
-SQLite Database
-        │
-        ▼
-Analytics Modules
- ├── Patient 360
- ├── Laboratory Analytics
- ├── Exposure & Efficacy
- ├── Anomaly Detection
- └── Reporting
-        │
-        ▼
-Clinical Insights & Reports
-```
-
----
-
-## Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/YOUR_USERNAME/TrialOps-Intelligence.git
-cd TrialOps-Intelligence
-```
-
-Install dependencies:
-
-```bash
+```powershell
 pip install -r requirements.txt
-```
-
-Run the application:
-
-```bash
 streamlit run app.py
 ```
 
----
+## Supported detected domains
 
-## Sample Workflow
+The application classifies data from standardized column signatures; it never uses filenames for business logic.
 
-1. Upload clinical datasets
-2. Detect SDTM domains automatically
-3. Run data validation checks
-4. Review validation findings
-5. Manage clinical queries
-6. Perform patient-level review
-7. Analyze safety and efficacy
-8. Detect anomalies
-9. Generate reports
+| Domain | Required structural signature |
+| --- | --- |
+| DM | `USUBJID`, `SEX`, `AGE` |
+| AE | `USUBJID`, `AETERM` |
+| LB | `USUBJID`, (`LBTEST` or `LBTESTCD`), (`LBSTRESN` or `LBORRES`) |
+| VS | `USUBJID`, (`VSTEST` or `VSTESTCD`), (`VSSTRESN` or `VSORRES`) |
+| EX | `USUBJID` plus an exposure variable such as `EXTRT`, `EXDOSE`, or `EXSTDTC` |
+| EFF | `USUBJID`, (`PARAM` or `PARAMCD`), and at least one of `BASE`, `AVAL`, `CHG`, or `PCHG` |
 
----
+## Clinical analytics
 
-## Intended Users
+- **Data Upload** — upload one or more CSV datasets and retain detected datasets in the Streamlit session.
+- **Validation Engine** — review SDTM data-quality findings and export results.
+- **Query Management** — synchronize validation findings to SQLite-backed queries with audit history and lifecycle controls.
+- **Dashboard** — review study, data-quality, safety, laboratory, treatment, and efficacy headline metrics.
+- **Patient 360** — review demographics, exposure, efficacy, safety, laboratory, queries, and timeline data for one subject.
+- **Laboratory Analytics** — classify results against supplied reference limits and review laboratory trends/alerts.
+- **Efficacy Analytics** — review EX administration, arm assignments, endpoint summaries, change-from-baseline, treatment-arm safety denominators, and carefully labelled descriptive/inferential outputs.
+- **Statistical Analysis** — conduct exploratory t-test or ANOVA treatment-arm review, effect-size, confidence-interval, responder, safety-versus-efficacy, and report-export analysis.
+- **Anomaly Detection** — review explainable data-quality, laboratory, safety, visit-sequence, and site-operational signals with prioritization and exports.
 
-- Clinical Data Managers
-- Clinical Data Analysts
-- Clinical Research Associates
-- Clinical Operations Teams
-- Pharmacovigilance Analysts
-- Biostatistics Teams
-- Clinical Trial Sponsors
+`CHG` is derived as `AVAL - BASE` only when it is missing. `PCHG` is derived as `((AVAL - BASE) / BASE) * 100` only when it is missing and baseline is non-zero. The application does not make efficacy, safety, approval, or statistical-significance claims from descriptive output.
 
----
+Statistical Analysis uses an independent Welch t-test for two evaluable arms and one-way ANOVA for more than two arms. It is an exploratory clinical-review utility, not a protocol-defined confirmatory analysis or FDA submission. PDF, Excel, and plain-text regulatory-review briefing downloads are generated locally from the active session.
 
-## Future Enhancements
+## Synthetic demonstration data
 
-- Protocol Deviation Analytics
-- Clinical Trial Risk Intelligence
-- Site Performance Monitoring
-- Advanced Safety Signal Detection
-- Automated PDF Reporting
-- PostgreSQL Support
-- Cloud Deployment
+The `data/generate_phase6_synthetic_data.py` script creates deterministic fictional Phase 6 demonstration CSVs for 60 subjects across Placebo, Drug A 50 mg, and Drug A 100 mg. Run it from the project root:
 
----
+```powershell
+python data/generate_phase6_synthetic_data.py
+```
 
-## Disclaimer
+It creates `sample_phase6_dm.csv`, `sample_phase6_ex.csv`, `sample_phase6_ae.csv`, `sample_phase6_lb.csv`, and `sample_phase6_efficacy.csv` in `data/`. These files contain no real patient information.
 
-This project is developed for educational, research, and portfolio purposes. It is not intended for use in regulated clinical trial environments without appropriate validation and compliance assessments.
+## Project layout
 
----
-
-## Author
-
-**Ramachandran S**
-
-B Tech Biotechnology 
-
-Clinical Data Analytics | Bioinformatics | Clinical Research Technology
+```text
+app.py                                # Navigation and Streamlit application entry point
+database.py                           # SQLite queries, audit trail, and lab-alert persistence
+pages/                                # Streamlit presentation pages
+utils/domain_detection.py             # Filename-independent SDTM domain detection
+utils/safety_analytics.py             # AE review helpers
+utils/lab_analytics.py                # Laboratory classification and trends
+utils/treatment_efficacy_analytics.py # Exposure, arm, efficacy, and arm-safety helpers
+data/                                 # Local database and fictional demonstration datasets
+```

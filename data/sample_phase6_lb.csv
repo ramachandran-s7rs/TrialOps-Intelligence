@@ -1,0 +1,121 @@
+USUBJID,LBTEST,LBTESTCD,LBORRES,LBORRESU,LBSTNRLO,LBSTNRHI,LBDTC
+SUB001,Alanine Aminotransferase,ALT,19,U/L,7,55,2025-01-15
+SUB001,Creatinine,CREAT,0.84,mg/dL,0.6,1.3,2025-02-28
+SUB002,Alanine Aminotransferase,ALT,20,U/L,7,55,2025-01-15
+SUB002,Creatinine,CREAT,0.93,mg/dL,0.6,1.3,2025-02-28
+SUB003,Alanine Aminotransferase,ALT,21,U/L,7,55,2025-01-15
+SUB003,Creatinine,CREAT,1.02,mg/dL,0.6,1.3,2025-02-28
+SUB004,Alanine Aminotransferase,ALT,22,U/L,7,55,2025-01-15
+SUB004,Creatinine,CREAT,1.11,mg/dL,0.6,1.3,2025-02-28
+SUB005,Alanine Aminotransferase,ALT,23,U/L,7,55,2025-01-15
+SUB005,Creatinine,CREAT,1.2,mg/dL,0.6,1.3,2025-02-28
+SUB006,Alanine Aminotransferase,ALT,24,U/L,7,55,2025-01-15
+SUB006,Creatinine,CREAT,1.29,mg/dL,0.6,1.3,2025-02-28
+SUB007,Alanine Aminotransferase,ALT,25,U/L,7,55,2025-01-15
+SUB007,Creatinine,CREAT,1.38,mg/dL,0.6,1.3,2025-02-28
+SUB008,Alanine Aminotransferase,ALT,26,U/L,7,55,2025-01-15
+SUB008,Creatinine,CREAT,0.75,mg/dL,0.6,1.3,2025-02-28
+SUB009,Alanine Aminotransferase,ALT,27,U/L,7,55,2025-01-15
+SUB009,Creatinine,CREAT,0.84,mg/dL,0.6,1.3,2025-02-28
+SUB010,Alanine Aminotransferase,ALT,140,U/L,7,55,2025-01-15
+SUB010,Creatinine,CREAT,0.93,mg/dL,0.6,1.3,2025-02-28
+SUB011,Alanine Aminotransferase,ALT,29,U/L,7,55,2025-01-15
+SUB011,Creatinine,CREAT,1.02,mg/dL,0.6,1.3,2025-02-28
+SUB012,Alanine Aminotransferase,ALT,30,U/L,7,55,2025-01-15
+SUB012,Creatinine,CREAT,1.11,mg/dL,0.6,1.3,2025-02-28
+SUB013,Alanine Aminotransferase,ALT,31,U/L,7,55,2025-01-15
+SUB013,Creatinine,CREAT,1.2,mg/dL,0.6,1.3,2025-02-28
+SUB014,Alanine Aminotransferase,ALT,32,U/L,7,55,2025-01-15
+SUB014,Creatinine,CREAT,0.5,mg/dL,0.6,1.3,2025-02-28
+SUB015,Alanine Aminotransferase,ALT,33,U/L,7,55,2025-01-15
+SUB015,Creatinine,CREAT,1.38,mg/dL,0.6,1.3,2025-02-28
+SUB016,Alanine Aminotransferase,ALT,34,U/L,7,55,2025-01-15
+SUB016,Creatinine,CREAT,0.75,mg/dL,0.6,1.3,2025-02-28
+SUB017,Alanine Aminotransferase,ALT,35,U/L,7,55,2025-01-15
+SUB017,Creatinine,CREAT,0.84,mg/dL,0.6,1.3,2025-02-28
+SUB018,Alanine Aminotransferase,ALT,36,U/L,7,55,2025-01-15
+SUB018,Creatinine,CREAT,0.93,mg/dL,0.6,1.3,2025-02-28
+SUB019,Alanine Aminotransferase,ALT,37,U/L,7,55,2025-01-15
+SUB019,Creatinine,CREAT,1.02,mg/dL,0.6,1.3,2025-02-28
+SUB020,Alanine Aminotransferase,ALT,132,U/L,7,55,2025-01-15
+SUB020,Creatinine,CREAT,1.11,mg/dL,0.6,1.3,2025-02-28
+SUB021,Alanine Aminotransferase,ALT,39,U/L,7,55,2025-01-15
+SUB021,Creatinine,CREAT,1.2,mg/dL,0.6,1.3,2025-02-28
+SUB022,Alanine Aminotransferase,ALT,40,U/L,7,55,2025-01-15
+SUB022,Creatinine,CREAT,1.29,mg/dL,0.6,1.3,2025-02-28
+SUB023,Alanine Aminotransferase,ALT,41,U/L,7,55,2025-01-15
+SUB023,Creatinine,CREAT,1.38,mg/dL,0.6,1.3,2025-02-28
+SUB024,Alanine Aminotransferase,ALT,42,U/L,7,55,2025-01-15
+SUB024,Creatinine,CREAT,0.75,mg/dL,0.6,1.3,2025-02-28
+SUB025,Alanine Aminotransferase,ALT,43,U/L,7,55,2025-01-15
+SUB025,Creatinine,CREAT,0.84,mg/dL,0.6,1.3,2025-02-28
+SUB026,Alanine Aminotransferase,ALT,44,U/L,7,55,2025-01-15
+SUB026,Creatinine,CREAT,0.93,mg/dL,0.6,1.3,2025-02-28
+SUB027,Alanine Aminotransferase,ALT,18,U/L,7,55,2025-01-15
+SUB027,Creatinine,CREAT,1.02,mg/dL,0.6,1.3,2025-02-28
+SUB028,Alanine Aminotransferase,ALT,19,U/L,7,55,2025-01-15
+SUB028,Creatinine,CREAT,0.5,mg/dL,0.6,1.3,2025-02-28
+SUB029,Alanine Aminotransferase,ALT,20,U/L,7,55,2025-01-15
+SUB029,Creatinine,CREAT,1.2,mg/dL,0.6,1.3,2025-02-28
+SUB030,Alanine Aminotransferase,ALT,142,U/L,7,55,2025-01-15
+SUB030,Creatinine,CREAT,1.29,mg/dL,0.6,1.3,2025-02-28
+SUB031,Alanine Aminotransferase,ALT,22,U/L,7,55,2025-01-15
+SUB031,Creatinine,CREAT,1.38,mg/dL,0.6,1.3,2025-02-28
+SUB032,Alanine Aminotransferase,ALT,23,U/L,7,55,2025-01-15
+SUB032,Creatinine,CREAT,0.75,mg/dL,0.6,1.3,2025-02-28
+SUB033,Alanine Aminotransferase,ALT,24,U/L,7,55,2025-01-15
+SUB033,Creatinine,CREAT,0.84,mg/dL,0.6,1.3,2025-02-28
+SUB034,Alanine Aminotransferase,ALT,25,U/L,7,55,2025-01-15
+SUB034,Creatinine,CREAT,0.93,mg/dL,0.6,1.3,2025-02-28
+SUB035,Alanine Aminotransferase,ALT,26,U/L,7,55,2025-01-15
+SUB035,Creatinine,CREAT,1.02,mg/dL,0.6,1.3,2025-02-28
+SUB036,Alanine Aminotransferase,ALT,27,U/L,7,55,2025-01-15
+SUB036,Creatinine,CREAT,1.11,mg/dL,0.6,1.3,2025-02-28
+SUB037,Alanine Aminotransferase,ALT,28,U/L,7,55,2025-01-15
+SUB037,Creatinine,CREAT,1.2,mg/dL,0.6,1.3,2025-02-28
+SUB038,Alanine Aminotransferase,ALT,29,U/L,7,55,2025-01-15
+SUB038,Creatinine,CREAT,1.29,mg/dL,0.6,1.3,2025-02-28
+SUB039,Alanine Aminotransferase,ALT,30,U/L,7,55,2025-01-15
+SUB039,Creatinine,CREAT,1.38,mg/dL,0.6,1.3,2025-02-28
+SUB040,Alanine Aminotransferase,ALT,134,U/L,7,55,2025-01-15
+SUB040,Creatinine,CREAT,0.75,mg/dL,0.6,1.3,2025-02-28
+SUB041,Alanine Aminotransferase,ALT,32,U/L,7,55,2025-01-15
+SUB041,Creatinine,CREAT,0.84,mg/dL,0.6,1.3,2025-02-28
+SUB042,Alanine Aminotransferase,ALT,33,U/L,7,55,2025-01-15
+SUB042,Creatinine,CREAT,0.5,mg/dL,0.6,1.3,2025-02-28
+SUB043,Alanine Aminotransferase,ALT,34,U/L,7,55,2025-01-15
+SUB043,Creatinine,CREAT,1.02,mg/dL,0.6,1.3,2025-02-28
+SUB044,Alanine Aminotransferase,ALT,35,U/L,7,55,2025-01-15
+SUB044,Creatinine,CREAT,1.11,mg/dL,0.6,1.3,2025-02-28
+SUB045,Alanine Aminotransferase,ALT,139,U/L,7,55,2025-01-15
+SUB045,Creatinine,CREAT,1.2,mg/dL,0.6,1.3,2025-02-28
+SUB046,Alanine Aminotransferase,ALT,37,U/L,7,55,2025-01-15
+SUB046,Creatinine,CREAT,1.29,mg/dL,0.6,1.3,2025-02-28
+SUB047,Alanine Aminotransferase,ALT,38,U/L,7,55,2025-01-15
+SUB047,Creatinine,CREAT,1.38,mg/dL,0.6,1.3,2025-02-28
+SUB048,Alanine Aminotransferase,ALT,39,U/L,7,55,2025-01-15
+SUB048,Creatinine,CREAT,0.75,mg/dL,0.6,1.3,2025-02-28
+SUB049,Alanine Aminotransferase,ALT,40,U/L,7,55,2025-01-15
+SUB049,Creatinine,CREAT,0.84,mg/dL,0.6,1.3,2025-02-28
+SUB050,Alanine Aminotransferase,ALT,144,U/L,7,55,2025-01-15
+SUB050,Creatinine,CREAT,0.93,mg/dL,0.6,1.3,2025-02-28
+SUB051,Alanine Aminotransferase,ALT,42,U/L,7,55,2025-01-15
+SUB051,Creatinine,CREAT,1.02,mg/dL,0.6,1.3,2025-02-28
+SUB052,Alanine Aminotransferase,ALT,43,U/L,7,55,2025-01-15
+SUB052,Creatinine,CREAT,1.11,mg/dL,0.6,1.3,2025-02-28
+SUB053,Alanine Aminotransferase,ALT,44,U/L,7,55,2025-01-15
+SUB053,Creatinine,CREAT,1.2,mg/dL,0.6,1.3,2025-02-28
+SUB054,Alanine Aminotransferase,ALT,130,U/L,7,55,2025-01-15
+SUB054,Creatinine,CREAT,1.29,mg/dL,0.6,1.3,2025-02-28
+SUB055,Alanine Aminotransferase,ALT,19,U/L,7,55,2025-01-15
+SUB055,Creatinine,CREAT,1.38,mg/dL,0.6,1.3,2025-02-28
+SUB056,Alanine Aminotransferase,ALT,20,U/L,7,55,2025-01-15
+SUB056,Creatinine,CREAT,0.5,mg/dL,0.6,1.3,2025-02-28
+SUB057,Alanine Aminotransferase,ALT,21,U/L,7,55,2025-01-15
+SUB057,Creatinine,CREAT,0.84,mg/dL,0.6,1.3,2025-02-28
+SUB058,Alanine Aminotransferase,ALT,22,U/L,7,55,2025-01-15
+SUB058,Creatinine,CREAT,0.93,mg/dL,0.6,1.3,2025-02-28
+SUB059,Alanine Aminotransferase,ALT,23,U/L,7,55,2025-01-15
+SUB059,Creatinine,CREAT,1.02,mg/dL,0.6,1.3,2025-02-28
+SUB060,Alanine Aminotransferase,ALT,136,U/L,7,55,2025-01-15
+SUB060,Creatinine,CREAT,1.11,mg/dL,0.6,1.3,2025-02-28
